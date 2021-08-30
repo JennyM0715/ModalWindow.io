@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Modal Window | HTML, CSS, and JS</title>
+
+    <!---favicon image---->
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
+
+    <!----css external link---->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!--title and button to display the modal window---->
+        <section>
+            <h1>Animated Modal with Header and Footer</h1>
+
+            <!---this is for opening the modal window box--->
+            <button id="modalButton">Open Modal Window</button>
+        </section>
+
+        <!---the modal content window box once button is clicked---->
+        <section>
+            <!----the modal window box container---->
+            <div class="modal" id="modalConatiner">
+
+                <!----the modal window box content---->
+                <div class="modalContent">
+                    <!----modal window box header portion---->
+                    <div class="modalHeader">
+                        <span class="close_window">&times;</span>
+                        <h3>This is the modal header</h3>
+                    </div>
+
+                    <!----modal window box body portion---->
+                    <div class="modalBody">
+                        <p>This is the modal body where the main content is displayed to the user</p>
+                        <p>The 'x' on the upper right side of the modal window is to close the modal. You can also exit the modal by click outiside the modal window box--the gray background.</p>
+                    </div>
+
+                    <!----modal window box footer portion---->
+                    <div class="modalFooter">
+                        <h3>This is the modal footer</h3>
+                    </div>
+                </div>
+                <!---end of modal window box content div---->
+            </div>
+            <!---end of modal window box container div---->
+        </section>
+    </main>
+    <footer>
+        <div class="flaticons_attribute_author">
+            <p>Icons made by <a href="https://www.freepik.com" title="Vaadin">Vaadin</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        </div>
+        <p>Practice | Jennifer Martinez</p>
+    </footer>
+
+    <!----javascript external file---->
+    <script src="app.js"></script>
+</body>
+</html>
